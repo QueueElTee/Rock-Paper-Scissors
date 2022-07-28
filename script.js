@@ -44,3 +44,40 @@ let playRound = (playerSelection, computerSelection) => {
 
     return roundMessage
 }
+
+
+// Calls the playRound function five times and keeps track of the score
+// Displays the winner of the game after all the rounds are completed
+let game = () => {
+    let playerScore = 0
+    let computerScore = 0
+
+    for(let i = 0; i < 5; i++){
+        console.log('\n')
+        let playerChoice = prompt(`Round ${i + 1}\nEnter Rock, Paper or Scissors: `)
+        let computerChoice = getComputerChoice()
+        let roundWinner = playRound(playerChoice, computerChoice)
+        console.log(roundWinner)
+
+        if (roundWinner.includes('Win')){
+            playerScore++
+        }
+        else if(roundWinner.includes('Loose')){
+            computerScore++
+        }
+    }
+
+    if(playerScore > computerScore){
+        console.log('\n')
+        console.log('Player Wins!!')
+    }
+    else {
+        console.log('\n')
+        console.log('Computer Wins!!')
+    }
+
+    console.log(`Player Score: ${playerScore}`)
+    console.log(`Computer Score: ${computerScore}`)
+}
+
+game()
