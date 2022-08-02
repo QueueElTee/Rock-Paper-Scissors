@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Rock Paper Scissors</title>
+    <script src="https://kit.fontawesome.com/f6fb301c7e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <main>
+        <h1>ROCK, PAPER, SCISSORS</h1>
+        <p>First player to score five points wins the game.</p>
+        <div class="play">
+            <button id="Rock">
+                <i class="fa-solid fa-hand-back-fist"></i>
+            </button>
+            <button id="Paper">
+                <i class="fa-solid fa-hand"></i>
+            </button>
+            <button id="Scissors">
+                <i class="fa-solid fa-hand-scissors"></i>
+            </button>
+        </div>
+        <div class="results">
+            <p>Computer played: -----</p>
+            <p>Player: 0</p>
+            <p>Computer: 0</p>
+            <p>---- wins the game.</p>
+        </div>
+        <p class="replay"><a href="#" id="reset">Play Again</a></p>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

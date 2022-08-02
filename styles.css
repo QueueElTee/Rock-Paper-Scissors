@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Pangolin', cursive;
+    background-color: #00334e;
+    color: white;
+}
+
+main{
+    padding: 2rem 4rem;
+    text-align: center;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+p{
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+}
+
+.play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    margin: 3rem 0;
+    /* max-width: 1000px;
+    width: 90%; */
+}
+
+.play >*{
+    color: #ff7800;
+    width: 30%;
+    height: 22rem;
+    font-size: 15em;
+    border: 2px solid white;
+    background-color: #00334e;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+}
+
+.play >*:hover{
+    color: #b84592;
+    border: 2px solid #a71930;
+}
+
+.replay{
+    margin-top: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+a:hover{
+    color: #ff7800;
+    font-size: 1.5rem;
+}
+
+/* Media Queries */
+@media(max-width: 1190px){
+    .play{
+        gap: 1.5rem;
+    }
+
+    .play >*{
+        height: 17rem;
+        font-size: 10em;
+    }
+}
+
+@media(max-width: 840px){
+    main{
+        padding: 2rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width: 745px){
+    .play{
+        gap: 1rem;
+    }
+
+    .play >*{
+        height: 12rem;
+        font-size: 5em;
+    }
+}
+
+@media(max-width: 465px){
+    main{
+        padding: 2rem 0.5rem;
+    }
+
+    p{
+        font-size: 1.15rem;
+    }
+
+    .play{
+        gap: 0.8rem;
+    }
+
+    .play >*{
+        height: 9rem;
+        font-size: 3.5em;
+    }
+    .results{
+        margin-top: 5rem;
+    }
+}
