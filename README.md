@@ -1,3 +1,3 @@
 # Rock Paper Scissors
 
-- Console version of the 'rock paper scissors game' in JavaScript.
+- A UI based version of the 'rock paper scissors game' in JavaScript.
