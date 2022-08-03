@@ -14,22 +14,22 @@
         <p>First player to score five points wins the game.</p>
         <div class="play">
             <button id="Rock">
-                <i class="fa-solid fa-hand-back-fist"></i>
+                <i class="fa-solid fa-hand-back-fist" id="Rock"></i>
             </button>
             <button id="Paper">
-                <i class="fa-solid fa-hand"></i>
+                <i class="fa-solid fa-hand" id="Paper"></i>
             </button>
             <button id="Scissors">
-                <i class="fa-solid fa-hand-scissors"></i>
+                <i class="fa-solid fa-hand-scissors" id="Scissors"></i>
             </button>
         </div>
         <div class="results">
-            <p>Computer played: -----</p>
-            <p>Player: 0</p>
-            <p>Computer: 0</p>
-            <p>---- wins the game.</p>
+            <p>Computer played: <span class="computer-choice">____</span></p>
+            <p>Human: <span class="player-score">0</span></p>
+            <p>Computer: <span class="computer-score">0</span></p>
+            <p><span class="game-winner">____</span> wins the game.</p>
         </div>
-        <p class="replay"><a href="#" id="reset">Play Again</a></p>
+        <p class="replay"><a href="#" id="reset">RESET</a></p>
     </main>
     <script src="script.js"></script>
 </body>
